@@ -32,8 +32,6 @@ ol, ul {
   }
 
 
-
-
 html {
   -webkit-font-smoothing: antialiased;
   font-family: 'Roboto', sans-serif; 
@@ -127,7 +125,6 @@ body {
   opacity:.8;
 }
 
-
 .content-top {
   width:90%;
   max-height:100px;
@@ -175,12 +172,33 @@ body {
   width:4em;
 }
 
-.main-content button {
+#addbutton {
+  border:0;
   margin-left:2em;
+  font-weight:600;
   margin-top:4.2em;
   width:6em;
   height:2.5em;
-  border-radius:5px;
+}
+
+#addbutton:hover {
+  border:0;
+  color:white;
+  background-color:#f6330f;
+  margin-left:2em;
+  font-weight:800;
+  margin-top:4.2em;
+  width:6em;
+  height:2.5em;
+}
+
+#middle-line {
+  width:95%;
+  margin-top:2em;
+  height:.1em;
+  background-color:#A47269;
+  opacity:.8;
+  border:0 none;
 }
 
 
@@ -203,12 +221,14 @@ input {
 }
 
 #explain {
-  margin-top:-1.5em;
+  font-style:italic;
+  margin-top:-.5em;
   margin-left:.2em;
   font-size:9pt;
 }
 
 .listitem {
+  cursor:pointer;
   margin-left:1.5em;
   font-size:.9em;
   font-weight:200;
@@ -219,7 +239,6 @@ input {
   font-size:.9em;
   font-weight:200;
   text-decoration:line-through;
-  color:#DDD;
 }
 
 
@@ -304,6 +323,9 @@ a {
 }
 
 #totalcost {
+  margin-top:5em;
+  margin-left:1em;
+  font-family:titlefont;
   font-size:10pt;
   padding:.5em;
   border-radius:5px;  
@@ -313,6 +335,3 @@ ul li {
   padding:0;
 }
 
-#total-button {
-  text-align:center;
-}
