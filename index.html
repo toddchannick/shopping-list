@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="css/font-awesome.min.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="js/app2.js"></script>
+  <meta charset="utf-8">
+  <title>ShopTrack</title>
+</head>
+
+<body>
+
+  <div class="header">
+
+    <div class="header-left">
+      <h1>ShopTrack</h1>
+      <p id="slogan">An easier way to shop</p>
+    </div>
+
+    <div class="header-right"></div>
+
+  </div>
+
+
+  <div class="main-content">
+
+    <div class="content-top">
+
+      <div class="itemdiv">
+        <h2>Item</h2>
+        <ul class="items">
+          <h3>
+          <li><input id ="newitem" type="text" name="qty1" placeholder="Enter item"/></li>
+          </h3>
+        </ul>
+      </div>
+
+      <div class="quantity">
+        <h2>Qty</h2>
+        <ul class="quantity-lines">
+          <h3>
+          <li><input type="text" name="qty1" id="qty"/></li>
+        </ul>
+      </div>
+
+      <div class="cost">
+        <h2>Cost ($)</h2>
+        <ul class="cost-lines">
+          <h3>
+          <li><input type="text" name="cost1" id="cost"/></li>
+          </h3>
+        </ul>
+      </div>
+
+    </div>
+
+    <button id ="addbutton">Add</button>
+
+    <div class="content-middle">
+      <h2>Things to buy:</h2>
+      <p id="explain">To mark items as complete, simply click on the line. To remove an item, click the x.</p>
+      <ul class="shoppinglist">
+       
+      </ul>
+    </div>
+    
+    <div class="content-bottom">
+      <button id="totalcost">Total Cost</button>
+      <input name="total" id="total" placeholder="$0.00" readonly/>
+    </div>
+
+  </div>
+
+
+</body>
+
+</html>
+
+
+
