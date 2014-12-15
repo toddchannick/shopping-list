@@ -316,6 +316,24 @@ input:focus {
   background-image:url('../images/remove.png');
 }
 
+.check {
+  display:inline-block;
+  cursor:pointer;
+  margin-left:8px;
+  width:15px;
+  height:15px;
+  background-image:url('../images/checkgray.png');
+}
+
+.check:hover {
+  display:inline-block;
+  cursor:pointer;
+  margin-left:8px;
+  width:15px;
+  height:15px;
+  background-image:url('../images/check.png');
+}
+
 .content-bottom {
   height:100px;
   position:absolute;

@@ -23,7 +23,7 @@ $(document).ready(function() {
                 finalTotal += itemTotalArr[i];
             };
 
-        $(this).closest('div').find('.shoppinglist').append('<li class="listitem"><div class="remove"></div>' + '<span class="strong">'+newestItem.val()+'</span>' + ':      ' + '<span class="small">'+ itemQuantity + ' at $' + itemCost.toFixed(2) + ' each</span><span class="hiddencost">'+itemTotal+'</span></li>');
+        $(this).closest('div').find('.shoppinglist').append('<li class="listitem"><div class="remove"></div>' + '<span class="strong">'+newestItem.val()+'</span>' + ':      ' + '<span class="small">'+ itemQuantity + ' at $' + itemCost.toFixed(2) + ' each</span><span class="hiddencost">'+itemTotal+'</span><div class="check"></div></li>').fadeIn(200);
         newestItem.val('');
 
 
@@ -57,7 +57,7 @@ $(document).ready(function() {
                     finalTotal += itemTotalArr[i];
                 };
 
-            $(this).closest('.main-content').find('.shoppinglist').append('<li class="listitem"><div class="remove"></div>' + '<span class="strong">'+newestItem.val()+'</span>' + ':      ' + '<span class="small">'+ itemQuantity + ' at $' + itemCost.toFixed(2) + ' each</span><span class="hiddencost">'+itemTotal+'</span></li>');
+            $(this).closest('.main-content').find('.shoppinglist').append('<li class="listitem"><div class="remove"></div>' + '<span class="strong">'+newestItem.val()+'</span>' + ':      ' + '<span class="small">'+ itemQuantity + ' at $' + itemCost.toFixed(2) + ' each</span><span class="hiddencost">'+itemTotal+'</span><div class="check"></div></li>').fadeIn(200);
             newestItem.val('');
 
 
@@ -75,7 +75,8 @@ $(document).ready(function() {
 
 
 
-$(document).on("click", ".remove", function(){
+$(document).on("click", ".remove", function(event){
+    event.preventDefault();
     var removedCost = parseFloat($(this).siblings('.hiddencost').text());
     
     var currentTotal = 0;
