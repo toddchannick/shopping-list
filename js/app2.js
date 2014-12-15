@@ -65,15 +65,13 @@ $(document).ready(function() {
             $(this).closest('.main-content').find('#qty').val('');
             $(this).closest('.main-content').find('#cost').val('');
         };
-    });
-
-    $('.shoppinglist').on("click","li", function(){
-        $(this).removeClass('listitem');
-        $(this).addClass('completed-item');
-    });
+    });    
 });
 
-
+$(document).on("click",".check",function(){
+    var selectedItem = $(this).closest('.listitem');
+    selectedItem.toggleClass('completed-item');
+});
 
 $(document).on("click", ".remove", function(event){
     event.preventDefault();
